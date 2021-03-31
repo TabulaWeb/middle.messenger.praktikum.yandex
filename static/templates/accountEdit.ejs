@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./Component/Head') %>
+</head>
+<body>
+    <header class="content-header">
+        <%- include('./Component/HeaderAccount') %>
+    </header>
+    <main class="content-main">
+        <aside class="content-aside__account">
+            <%- include('./Component/SidebarAccount') %>
+        </aside>
+        <section class="content-section">
+            <div class="content-section_title">
+            </div>
+            <div class="section-account__content">
+                <div class="section-account__content-avatar">
+                    <img src="assets/img/noavatar.svg" alt="">
+                </div>
+
+                <div class="section-account__content-profile">
+                    <div class="content-profile__item">
+                        <p>Почта</p>
+                        <input type="text" placeholder="pochta@yandex.ru" name="mail" id="mail">
+                    </div>
+                    <div class="content-profile__item">
+                        <p>Логин</p>
+                        <input type="text" placeholder="ivanivanov" name="login" id="login">
+                    </div>
+                    <div class="content-profile__item">
+                        <p>Имя</p>
+                        <input type="text" placeholder="Иван" name="first_name" id="first_name">
+                    </div>
+                    <div class="content-profile__item">
+                        <p>Фамилия</p>
+                        <input type="text" placeholder="Иванов" name="second_name" id="second_name">
+                    </div>
+                    <div class="content-profile__item">
+                        <p>Имя в чате</p>
+                        <input type="text" placeholder="Иван" name="display_name" id="display_name">
+                    </div>
+                    <div class="content-profile__item">
+                        <p>Телефон</p>
+                        <input type="text" placeholder="+7 (909) 967 30 30" name="phone" id="phone">
+                    </div>
+                </div>
+
+                <button class="accountEditSave" onclick="editProfile()">Сохранить</button>
+            </div>
+        </section>
+    </main>
+    <script src="assets/js/accountEdit.js"></script>
+    <script src="assets/js/index.js"></script>
+    
+</body>
+</html>

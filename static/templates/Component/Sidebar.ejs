@@ -1,0 +1,23 @@
+<div class="content-header__search">
+    <input type="search" id="searchInput" onkeyup="search()" placeholder="Поиск">
+</div>
+
+<ul id="myUL" class="content-header__items">
+    <% chats.forEach(function(chat) { %>
+    <li class="content-header__item" onclick="addActiveLink()">
+        <a class="linkChat" href=<%= chat.link %>>
+            <div class="content-header__item-img">
+                <img src=<%= chat.avatar %> alt="">
+            </div>
+            <div class="content-header__item-text">
+                <p class="name-chat"><%= chat.name %></p>
+                <p class="anwser-chat"><%= chat.message %></p>
+            </div>
+            <div class="content-header__item-time">
+                <p class="day-chat"><%= chat.time %></p>
+            </div>
+            <span class="fav_count-aside fav_count_header"><%= chat.notice %></span>
+        </a>
+    </li> 
+    <% }); %>
+</ul>

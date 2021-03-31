@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./Component/Head') %>
+</head>
+<body>
+    <section class="section-login">
+        <div class="section-login__welcome">
+            <h1>Добро Пожаловать</h1>
+            <object  data="assets/img/img_login.svg" type="image/svg+xml"></object>
+        </div>
+        <div class="section-login__form">
+            <div class="section-login__form-content">
+                <div class="form">
+                    <label>
+                        <p>Почта</p>
+                        <input type="mail" placeholder="Введите почту" name="email" id="email">
+                    </label>
+                    <label>
+                        <p>Логин</p>
+                        <input type="text" placeholder="Введите логин" name="display_name" id="display_name">
+                    </label>
+                    <label>
+                        <p>Имя</p>
+                        <input type="text" placeholder="Введите имя" name="first_name" id="first_name"> 
+                    </label>
+                    <label>
+                        <p>Фамилия</p>
+                        <input type="text" placeholder="Введите фамилию" name="second_name" id="second_name">
+                    </label><label>
+                        <p>Телефон</p>
+                        <input type="phone" placeholder="Введите телефон" name="phone" id="phone">
+                    </label>
+                    <label>
+                        <p>Пароль</p>
+                        <input type="password" placeholder="Введите пароль" name="password" id="password">
+                    </label>
+                    <label>
+                        <p>Пароль (еще раз)</p>
+                        <input type="password" placeholder="Введите пароль" name="passwordTwo" id="passwordTwo">
+                    </label>
+
+                    <p class="error_signin">
+
+                    </p>
+
+                    <button onclick="signinButton()">
+                        Зарегистрироваться
+                    </button>
+
+                    <a href="/">Войти</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/js/signin.js"></script>
+</body>
+</html>
