@@ -6,7 +6,9 @@
     <div class="content-header__info_notice">
         <div class="bell_img">
             <span class="fav_count fav_count_header">1</span>
-            <img onclick="elementNoticeActivator()" id="flyoutIcon-example" src="assets/img/bell.svg" alt="Уведомление">
+            <button onclick="elementNoticeActivator()">
+                <img id="flyoutIcon-example" src="assets/img/bell.svg" alt="Уведомление">
+            </button>
             <div class="bell_block" onclick="elementBlockNoticeActivator()" id="flyout-example">
                 <div class="bell_block-title">
                     <p>Уведомления</p>
@@ -53,7 +55,10 @@
             <p class="account_data-name">Имя Пользователя</p>
             <p class="status_user"><img class="status_user-img" src="assets/img/clover.svg" alt=""> В сети</p>
         </div>
-        <img class="account_detail" src="assets/img/arrow_down.svg" id="flyoutIcon-exampl" alt="" onclick="elementProfileActivator()">
+        <button onclick="elementProfileActivator()">
+            <img class="account_detail" src="assets/img/arrow_down.svg" id="flyoutIcon-exampl" alt="">
+        </button>
+        
 
         <div class="info-account__block" id="flyout-exampl"> 
             <nav class="info-account__list">
