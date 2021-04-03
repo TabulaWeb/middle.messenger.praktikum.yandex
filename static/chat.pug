@@ -1,14 +1,14 @@
 doctype html
 head
-    include component/Head.pug
+    include Component/Head.pug
 header.content-header
-    include component/Header.pug
+    include Component/Header.pug
 main.content-main
   aside.content-aside_chat
-    include component/Sidebar.pug
+    include Component/Sidebar.pug
   section.content-section
     .content-section_title
-      include component/TitleChat.pug
+      include Component/TitleChat.pug
       #flyout.chat-setting__block
         .chat-setting__block-element
           button(onclick='AddUser()')
@@ -19,7 +19,7 @@ main.content-main
             img(src='img/plusUser.svg' alt='')
             p Удалить пользователя
     .content-section_chat
-        include component/ContentChat.pug
+        include Component/ContentChat.pug
 .chatAddUser__wriper
   .chatAddUser
     .chatAddUser__title
