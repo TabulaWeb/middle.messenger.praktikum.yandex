@@ -10,7 +10,7 @@
     "start": "parcel build static/index.pug && npm run backend",
     "build": "parcel build static/index.pug"
   },
-  "author": "",
+  "author": "TabulaWeb <67907195+TabulaWeb@users.noreply.github.com>",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
@@ -21,5 +21,6 @@
     "parcel-bundler": "^1.12.5",
     "sass": "^1.32.8"
   },
-  "keywords": []
+  "keywords": [],
+  "repository": "https://github.com/TabulaWeb/middle.messenger.praktikum.yandex.git"
 }
