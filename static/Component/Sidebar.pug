@@ -35,5 +35,5 @@ ul#myUL.content-header__items
                 p.anwser-chat #{chat.message}
             .content-header__item-time
                 p.day-chat #{chat.time}
-            if notice >= 0
+            if chat.notice >= 1
               span.fav_count-aside.fav_count_header #{chat.notice}
