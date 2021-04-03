@@ -2,7 +2,7 @@
   "name": "yapr",
   "version": "1.0.0",
   "description": "yapr messanger",
-  "main": "index.js",
+  "main": "index.pug",
   "type": "module",
   "scripts": {
     "dev": "parcel static/index.pug",
