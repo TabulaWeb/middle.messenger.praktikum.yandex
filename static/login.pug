@@ -1,0 +1,23 @@
+doctype html
+head
+    include component/Head.pug
+section.section-login
+  .section-login__welcome
+    h1 Добро Пожаловать
+    object(data='img/img_login.svg' type='image/svg+xml')
+  .section-login__form
+    .section-login__form-content
+      
+        .form
+          label
+            p Логин
+            input#login(type='text' placeholder='Введите логин' name='login')
+          label
+            p Пароль
+            input#password(type='text' placeholder='Введите пароль' name='password')
+          p.error_login
+          button(onclick='loginButton()')
+            | Авторизоваться
+          a(href='signin.pug') Нет аккаунта ?
+script 
+  include js/login.js

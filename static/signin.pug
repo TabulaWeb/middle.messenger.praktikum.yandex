@@ -1,0 +1,37 @@
+doctype html
+head
+    include component/Head.pug
+section.section-login
+  .section-login__welcome
+    h1 Добро Пожаловать
+    object(data='img/img_login.svg' type='image/svg+xml')
+  .section-login__form
+    .section-login__form-content
+      .form
+        label
+          p Почта
+          input#email(type='mail' placeholder='Введите почту' name='email')
+        label
+          p Логин
+          input#display_name(type='text' placeholder='Введите логин' name='display_name')
+        label
+          p Имя
+          input#first_name(type='text' placeholder='Введите имя' name='first_name')
+        label
+          p Фамилия
+          input#second_name(type='text' placeholder='Введите фамилию' name='second_name')
+        label
+          p Телефон
+          input#phone(type='phone' placeholder='Введите телефон' name='phone')
+        label
+          p Пароль
+          input#password(type='password' placeholder='Введите пароль' name='password')
+        label
+          p Пароль (еще раз)
+          input#passwordTwo(type='password' placeholder='Введите пароль' name='passwordTwo')
+        p.error_signin
+        button(onclick='signinButton()')
+          | Зарегистрироваться
+        a(href='index.pug') Войти
+script 
+  include js/signin.js

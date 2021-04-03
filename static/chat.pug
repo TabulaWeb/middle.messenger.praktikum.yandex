@@ -1,0 +1,42 @@
+doctype html
+head
+    include component/Head.pug
+header.content-header
+    include component/Header.pug
+main.content-main
+  aside.content-aside_chat
+    include component/Sidebar.pug
+  section.content-section
+    .content-section_title
+      include component/TitleChat.pug
+      #flyout.chat-setting__block
+        .chat-setting__block-element
+          button(onclick='AddUser()')
+            img(src='img/plusUser.svg' alt='')
+            p Добавить пользователя
+        .chat-setting__block-element
+          button(onclick='DelUser()')
+            img(src='img/plusUser.svg' alt='')
+            p Удалить пользователя
+    .content-section_chat
+        include component/ContentChat.pug
+.chatAddUser__wriper
+  .chatAddUser
+    .chatAddUser__title
+      p Добавить пользователя
+    .chatAddUser__form
+      label
+        p Логин
+        input(type='text')
+      button Добавить
+.chatDelUser__wriper
+  .chatDelUser
+    .chatDelUser__title
+      p Удалить пользователя
+    .chatDelUser__form
+      label
+        p Логин
+        input(type='text')
+      button Удалить
+script
+  include index.js
