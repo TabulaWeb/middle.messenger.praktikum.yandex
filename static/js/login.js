@@ -1,4 +1,4 @@
-function loginButton(){
+document.querySelector("#loginButton").addEventListener("click", function(){
     let inputLogin = document.querySelector("#login").value
     let inputPassword = document.querySelector("#password").value
     let textError = document.querySelector('.error_login')
@@ -15,4 +15,4 @@ function loginButton(){
     } else {
         return textError.textContent = 'Логин или пароль не верный';
     }
-}
+})

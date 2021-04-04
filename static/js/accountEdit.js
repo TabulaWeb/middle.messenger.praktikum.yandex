@@ -1,4 +1,23 @@
-function editProfile() {
+let elementNotice = document.querySelector('.bell_block')
+let elementProfile = document.querySelector('.info-account__block')
+
+document.querySelector(".bell_img img").addEventListener("click", function(){
+    if(elementNotice.classList.contains('active')){
+        elementNotice.classList.remove('active')
+    } else {
+        elementNotice.classList.add('active')
+    }
+});
+
+document.querySelector(".content-header__info_account .account_detail").addEventListener("click", function(){
+    if(elementProfile.classList.contains('active')){
+        elementProfile.classList.remove('active')
+    } else {
+        elementProfile.classList.add('active')
+    }
+})
+
+document.querySelector(".accountEditSave").addEventListener("click", function(){
     let inputEmail = document.querySelector("#mail").value
     let inputLogin = document.querySelector("#login").value
     let inputFirstName = document.querySelector("#first_name").value
@@ -16,4 +35,4 @@ function editProfile() {
     }
 
     console.log(ObjEditProfile)
-}
+})

@@ -1,4 +1,4 @@
-function signinButton(){
+document.querySelector("#signinButton").addEventListener("click", function(){
     let inputMail = document.querySelector("#email").value
     let inputLogin = document.querySelector("#display_name").value
     let inputFirstName = document.querySelector("#first_name").value
@@ -28,4 +28,4 @@ function signinButton(){
     } else {
         return window.location.pathname = '/'
     }
-}
+})

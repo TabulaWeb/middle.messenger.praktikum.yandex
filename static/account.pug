@@ -10,12 +10,12 @@ main.content-main
     .content-section_title
     .section-account__content
       .section-account__content-avatar
-        #flyoutIcon-exa.content-avatar__img(onclick='elementChangeAvatar()')
+        .content-avatar__img#addavatarrr
           img(src='img/noavatar.svg' alt='')
         p Имя пользователя
       .section-account__content-profile
         .content-profile__item
-          p Почта
+          p#addavatarrr Почта
           p pochta@yandex.ru
         .content-profile__item
           p Логин
@@ -50,8 +50,7 @@ main.content-main
       label.fileUploader__button(for='upload') Выбрать файл на компьютере
       input#upload.fileUploader__input(type='file' accept='image/*')
       p#upload-message.fileUploader__message
-    button.changeFileButton(onclick='changeFile()') Поменять
+    button.changeFileButton Поменять
     p.FileForm__error
 script
-  include index.js
   include js/change.js
