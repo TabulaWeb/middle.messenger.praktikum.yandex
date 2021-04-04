@@ -60,7 +60,8 @@ document.querySelector("#addFile").onclick = function(){
     }
 }
 
-function search(){
+// onkeyup='search()'
+document.querySelector('#searchInput').addEventListener('keyup', function(){
     var input, filter, ul, li, a, i, txtValue;
     input = document.getElementById("searchInput");
     filter = input.value.toUpperCase();
@@ -75,4 +76,4 @@ function search(){
             li[i].style.display = "none";
         }
     }
-}
+});

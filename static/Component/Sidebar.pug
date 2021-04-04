@@ -1,5 +1,5 @@
 .content-header__search
-  input#searchInput(type='search' onkeyup='search()' placeholder='Поиск')
+  input#searchInput(type='search'  placeholder='Поиск')
 ul#myUL.content-header__items
   -
     let chats = [
@@ -26,7 +26,7 @@ ul#myUL.content-header__items
         {name:'Серёжа', avatar:'img/logochat.png', link:'/chat.pug', time:'12:00', message:'Друзья, у меня для вас особенный выпуск новостей!...', notice:'1'},
     ];
   each chat in chats
-    li.content-header__item(onclick='addActiveLink()')
+    li.content-header__item
         a.linkChat(href=chat.link)
             .content-header__item-img
                 img(src=chat.avatar alt='')
