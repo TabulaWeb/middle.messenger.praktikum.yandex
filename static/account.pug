@@ -1,0 +1,57 @@
+doctype html
+head
+    include Component/Head.pug
+header.content-header
+    include Component/HeaderAccount.pug
+main.content-main
+  aside.content-aside__account
+    include Component/SidebarAccount.pug
+  section.content-section
+    .content-section_title
+    .section-account__content
+      .section-account__content-avatar
+        #flyoutIcon-exa.content-avatar__img(onclick='elementChangeAvatar()')
+          img(src='img/noavatar.svg' alt='')
+        p Имя пользователя
+      .section-account__content-profile
+        .content-profile__item
+          p Почта
+          p pochta@yandex.ru
+        .content-profile__item
+          p Логин
+          p ivanivanov
+        .content-profile__item
+          p Имя
+          p Иван
+        .content-profile__item
+          p Фамилия
+          p Иванов
+        .content-profile__item
+          p Имя в чате
+          p Иван
+        .content-profile__item
+          p Телефон
+          p +7 (909) 967 30 30
+      .section-account__link
+        nav.section-account__navigation
+          ul.section-account__navigation-list
+            li.section-account__navigation-item
+              a(href='/accountedit') Изменить данные
+            li.section-account__navigation-item
+              a(href='/resetpassword') Изменить пароль
+            li.section-account__navigation-item
+              a(href='/login') Выйти
+.add-avatar__wripper
+  #flyout-exa.add-avatar
+    .add-avatar__title
+      p Загрузите фото
+    form.FileForm(name='uploadForm')
+      #flyout-d.flyout-debug
+      label.fileUploader__button(for='upload') Выбрать файл на компьютере
+      input#upload.fileUploader__input(type='file' accept='image/*')
+      p#upload-message.fileUploader__message
+    button.changeFileButton(onclick='changeFile()') Поменять
+    p.FileForm__error
+script
+  include index.js
+  include js/change.js

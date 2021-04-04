@@ -1,0 +1,43 @@
+.content-section_chat-message
+  .chat-message__date
+    p 19 &icy;&yucy;&ncy;&yacy;
+  .chat-message__otherUser
+    p
+      | Привет! Смотри, тут всплыл интересный кусок лунной космической истории — НАСА в какой-то момент попросила Хассельблад адаптировать модель SWC для полетов на Луну. Сейчас мы все знаем что астронавты летали с моделью 500 EL — и к слову говоря, все тушки этих камер все еще находятся на поверхности Луны, так как астронавты с собой забрали только кассеты с пленкой.
+      br
+      br
+      |         Хассельблад в итоге адаптировал SWC для космоса, но что-то пошло не так и на ракету они так никогда и не попали. Всего их было произведено 25 штук, одну из них недавно продали на аукционе за 45000 евро.
+    span.time__message 11:56
+  .chat-message__otherUser-img
+    img(src='img/camera.png' alt='')
+    span.time__message 12:00
+  .chat-message__youUser
+    p.text-message__youUser &Kcy;&rcy;&ucy;&tcy;&ocy;
+    .chat-message__youUser-info
+      img(src='img/readmessage.svg' alt='')
+      span 12:00
+.content-section_chat-form
+  form(method='POST')
+    label.chat-form_textarea
+      textarea(placeholder='Сообщение')
+      .chat-form_textarea_elements
+        .textarea_elements-base
+          img(src='img/bold.svg' alt='bold')
+          img(src='img/italic.svg' alt='')
+          img(src='img/strikethrough.svg' alt='')
+          img(src='img/link.svg' alt='')
+          img(src='img/ordered.png' alt='')
+        .textarea_elements-main
+          img(src='img/smile.png' alt='')
+          img(onclick='addFileActivator()' src='img/addFile.png' alt='')
+          img(src='img/sendMessage.png' alt='')
+          .block_addfile
+            button
+              img(src='img/addFilePhoto.svg' alt='')
+              p Фото или Видео
+            button
+              img(src='img/addFileFile.svg' alt='')
+              p Файл
+            button
+              img(src='img/addFileLocation.svg' alt='')
+              p Локация
