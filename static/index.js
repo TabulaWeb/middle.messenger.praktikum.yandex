@@ -6,7 +6,7 @@ let elementAddUser = document.querySelector('.chatAddUser__wriper')
 let elementDelUser = document.querySelector('.chatDelUser__wriper')
 let elementAddFile = document.querySelector('.block_addfile')
 
-function elementNoticeActivator(){
+document.querySelector(".bell_img img").onclick = function(){
     if(elementNotice.classList.contains('active')){
         elementNotice.classList.remove('active')
     } else {
