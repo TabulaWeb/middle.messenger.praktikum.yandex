@@ -563,7 +563,6 @@ body{
 .content-section_chat{
     height: 85.7vh;
     border-top: 2px solid rgb(143 143 143 / 20%);
-    border-right: 2px solid rgb(143 143 143 / 20%);
     padding: 10px;
     position: relative;
     display: flex;

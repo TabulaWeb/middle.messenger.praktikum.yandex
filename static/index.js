@@ -14,7 +14,7 @@ document.querySelector(".bell_img img").onclick = function(){
     }
 }
 
-function elementProfileActivator(){
+document.querySelector(".content-header__info_account .account_detail").onclick = function(){
     if(elementProfile.classList.contains('active')){
         elementProfile.classList.remove('active')
     } else {
@@ -22,7 +22,7 @@ function elementProfileActivator(){
     }
 }
 
-function elementChatSettingActivator(){
+document.querySelector("#flyoutIcon").onclick = function(){
     if(elementChatSetting.classList.contains('active')){
         elementChatSetting.classList.remove('active')
     } else {
@@ -34,7 +34,7 @@ function elementChangeAvatar(){
     elementAvatar.setAttribute("style", "display:flex;")
 }
 
-function AddUser(){
+document.querySelector("#addUser").onclick = function(){
     if(elementAddUser.classList.contains('active-flex')){
         elementAddUser.classList.remove('active-flex')
     } else {
@@ -43,7 +43,7 @@ function AddUser(){
     }
 }
 
-function DelUser(){
+document.querySelector("#DelUser").onclick = function(){
     if(elementDelUser.classList.contains('active-flex')){
         elementDelUser.classList.remove('active-flex')
     } else {
@@ -52,7 +52,7 @@ function DelUser(){
     }
 }
 
-function addFileActivator(){
+document.querySelector("#addFile").onclick = function(){
     if(elementAddFile.classList.contains('active-flex')){
         elementAddFile.classList.remove('active-flex')
     } else {

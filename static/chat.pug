@@ -11,11 +11,11 @@ main.content-main
       include Component/TitleChat.pug
       #flyout.chat-setting__block
         .chat-setting__block-element
-          button(onclick='AddUser()')
+          button#addUser 
             img(src='img/plusUser.svg' alt='')
             p Добавить пользователя
         .chat-setting__block-element
-          button(onclick='DelUser()')
+          button#DelUser
             img(src='img/plusUser.svg' alt='')
             p Удалить пользователя
     .content-section_chat
