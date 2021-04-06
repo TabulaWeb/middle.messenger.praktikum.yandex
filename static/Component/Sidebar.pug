@@ -2,7 +2,7 @@
   input#searchInput(type='search' onkeyup='search()' placeholder='Поиск')
 ul#myUL.content-header__items
   for item in chatss
-    li.content-header__item(onclick='addActiveLink()')
+    li.content-header__item
         a.linkChat(href=item.link)
             .content-header__item-img
                 img(src=item.avatar alt='')

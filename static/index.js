@@ -60,7 +60,7 @@ function addFileActivator(){
     }
 }
 
-function search(){
+function filter(){
     var input, filter, ul, li, a, i, txtValue;
     input = document.getElementById('searchInput');
     filter = input.value.toUpperCase();
