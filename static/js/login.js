@@ -1,18 +1,25 @@
-function loginButton(){
-    let inputLogin = document.querySelector('#login').value
-    let inputPassword = document.querySelector('#password').value
-    let textError = document.querySelector('.error_login')
+const isCheckboxOrRadio = type => ['checkbox', 'radio'].includes(type);
 
-    let user = {
-        login: inputLogin,
-        password: inputPassword
+const {formData} = document.forms
+
+function retrieveFormValue(event) {
+    event.preventDefault()
+
+    const {elements} = formData;
+    const values = {};
+
+    for(let i = 0; i < elements.length; i++){
+        const formElement = elements[i];
+        const {name} = formElement;
+
+        if (name){
+            const {value, type, checked} = formElement
+
+            values[name] = isCheckboxOrRadio(type) ? checked : value;
+        }
     }
 
-    console.log(user)
-
-    if(inputLogin.toLowerCase() == 'admin' && inputPassword.toLowerCase() == 'admin'){
-        return window.location.pathname = '/'
-    } else {
-        return textError.textContent = 'Логин или пароль не верный';
-    }
+    console.log(values)
 }
+
+formData.addEventListener('submit', retrieveFormValue)

@@ -8,7 +8,7 @@ section.section-login
     object(data='img/img_login.svg' type='image/svg+xml')
   .section-login__form
     .section-login__form-content
-      
+      form#formData
         .form
           label
             p Логин
@@ -17,7 +17,7 @@ section.section-login
             p Пароль
             input#password(type='text' placeholder='Введите пароль' name='password')
           p.error_login
-          button(onclick='loginButton()')
+          button(type="submit")
             | Авторизоваться
           a(href='/signin') Нет аккаунта ?
 script 
