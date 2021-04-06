@@ -1,0 +1,26 @@
+.error-server{
+    width: 100vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.error-server__text {
+    margin-bottom: 69px;
+}
+
+.error-server__text h1{
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.error-server__text p{
+    font-size: 20px;
+    font-weight: 500;
+}

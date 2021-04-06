@@ -1,0 +1,234 @@
+.content-aside__account {
+    max-width: max-content;
+    -webkit-box-shadow: 2px 0px 0px 0px rgb(143 143 143 / 20%);
+    -moz-box-shadow: 2px 0px 0px 0px rgba(143, 143, 143, 0.2);
+    box-shadow: 2px 0px 0px 0px rgb(143 143 143 / 20%);
+    background-color: var(--main-bgtwo);
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.link_back{
+    cursor: pointer;
+}
+
+.section-account__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px 0px;
+    justify-content: center;
+}
+
+.content-avatar__img img{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.content-avatar__img{
+    position: relative;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+}
+
+
+.content-avatar__img::before{
+    content: "Поменять аватар";
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    opacity: 0;
+}
+
+.content-avatar__img:hover::before{
+    opacity: 1;
+}
+
+.section-account__content-avatar p{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.section-account__content-profile{
+    max-width: 55%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0px;
+}
+
+.content-profile__item{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #8f8f8f33;
+}
+
+.content-profile__item p:first-child{
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.content-profile__item p:last-child{
+    font-size: 13px;
+    font-weight: 500;
+    color: #8f8f8f;
+}
+
+.section-account__link{
+    max-width: 55%;
+    width: 100%;
+}
+
+.section-account__navigation-list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0px;
+    list-style: none;
+}
+
+.section-account__navigation-item{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #8f8f8f33;
+}
+
+.section-account__navigation-item:last-child{
+    border-bottom: none;
+}
+
+.section-account__navigation-item:last-child a{
+    color: #FF0000;
+}
+
+.content-profile__item input{
+    color: #8f8f8f;
+}
+
+.content-profile__item input::placeholder{
+    text-align: right;
+    color: #8f8f8f;
+}
+
+.accountEditSave{
+    width: 20%;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 12px 0px;
+    color: #fff;
+    background-color: #8f8f8f;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.add-avatar__wripper{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.add-avatar{
+    display: flex;
+    padding: 30px 40px;
+    flex-direction: column;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.14);
+    border-radius: 12px;
+    transform: translateX(14%);
+}
+
+.add-avatar__title{
+    margin-bottom: 43px;
+}
+
+.addFileButton{
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    text-decoration-line: underline;
+
+    color: #3369F3;
+    cursor: pointer;
+    background-color: #fff;
+    max-width: 122px;
+    margin-bottom: 45px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.changeFileButton{
+    min-width: 280px;
+    background-color: #8f8f8f;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.add-avatar__title p{
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.FileForm__error{
+    font-size: 11px;
+    font-weight: 500;
+    margin-top: 14px;
+    text-align: center;
+    color: #FF2F2F;
+}
+
+.fileUploader__input {
+    opacity: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.fileUploader__button {
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: underline;
+    max-width: 122px;
+    text-align: center;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fileUploader__message{
+    text-align: center;
+}
+
+.FileForm{
+    margin-bottom: 45px;
+}

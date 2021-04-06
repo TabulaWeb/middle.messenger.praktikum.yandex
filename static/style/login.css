@@ -1,0 +1,119 @@
+.section-login{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.section-login__welcome{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--main-bgtwo);
+}
+
+.section-login__welcome h1{
+    font-size: 34px;
+    text-transform: uppercase;
+}
+
+.section-login__welcome object{
+    max-width: 65%;
+}
+
+#clever{
+    stroke: red!important;
+}
+
+#some_svg_element_id{
+    stroke: red!important;
+}
+
+.section-login__form{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-login__form-content{
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    width: 100%;
+    padding: 35px 10px;
+    border-radius: 15px;
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+
+.section-login__form-content .form{
+    display: flex;
+    flex-direction: column;
+}
+
+.section-login__form-title{
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.section-login__form-content .form input{
+    border-bottom: 1px solid #8f8f8f33;
+    font-size: var(--main-font-size);
+    font-weight: 600;
+    outline: none;
+    margin-top: 10px;
+    margin-bottom: 26px;
+    width: 100%;
+    padding-bottom: 3px;
+}
+
+.section-login__form-content .form input::placeholder{
+    color: #8f8f8f;
+}
+
+.section-login__form-content .form label p{
+    font-size: 13px;
+    font-weight: bold;
+    font-family: var(--font-source-sans);
+    color: #000;
+    margin-bottom: 5px;
+    text-align: start;
+}
+
+.section-login__form-content .form button{
+    width: 72%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    margin-bottom: 13px;
+    background-color: #8f8f8f;
+    font-size: var(--main-font-size);
+    font-weight: bold;
+    padding: 13px 42px;
+    color: #fff;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.section-login__form-content .form button:hover{
+    opacity: 0.8;
+    transition: 0.2s;
+}
+
+.section-login__form-content .form a{
+    color: #8f8f8f;
+}
+
+.section-login__form-content .form a:hover{
+    opacity: 0.8;
+    transition: 0.2s;
+}

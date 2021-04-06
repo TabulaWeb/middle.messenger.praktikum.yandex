@@ -1,0 +1,28 @@
+@import 'bell.css';
+@import 'sidebar.css';
+@import 'header.css';
+
+.content-main{
+    display: flex;
+    flex-direction: row;
+    padding: 2px 0% 0px;
+    height: calc(100vh - 67px);
+}
+
+.content-section h1{
+    height: calc(100vh - 134px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid rgb(143 143 143 / 20%);
+}
+
+.content-section_title{
+    padding-left: 10px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 2vw;
+    position: relative;
+}
