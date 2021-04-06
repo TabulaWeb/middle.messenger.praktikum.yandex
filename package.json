@@ -17,11 +17,11 @@
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
-    "express": "^4.17.1",
-    "parcel-bundler": "^1.12.5",
-    "pug": "^3.0.2",
-    "pug-loader": "^2.4.0",
-    "sass": "^1.32.8"
+    "express": "4.17.1",
+    "parcel-bundler": "1.12.5",
+    "pug": "3.0.2",
+    "pug-loader": "2.4.0",
+    "sass": "1.32.8"
   },
   "keywords": [],
   "repository": "git+https://github.com/TabulaWeb/middle.messenger.praktikum.yandex.git",

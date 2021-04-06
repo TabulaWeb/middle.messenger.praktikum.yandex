@@ -1,10 +1,10 @@
-let elementNotice = document.querySelector('.bell_block')
-let elementProfile = document.querySelector('.info-account__block')
-let elementChatSetting = document.querySelector('.chat-setting__block')
-let elementAvatar = document.querySelector('.add-avatar__wripper')
-let elementAddUser = document.querySelector('.chatAddUser__wriper')
-let elementDelUser = document.querySelector('.chatDelUser__wriper')
-let elementAddFile = document.querySelector('.block_addfile')
+const elementNotice = document.querySelector('.bell_block')
+const elementProfile = document.querySelector('.info-account__block')
+const elementChatSetting = document.querySelector('.chat-setting__block')
+const elementAvatar = document.querySelector('.add-avatar__wripper')
+const elementAddUser = document.querySelector('.chatAddUser__wriper')
+const elementDelUser = document.querySelector('.chatDelUser__wriper')
+const elementAddFile = document.querySelector('.block_addfile')
 
 function elementNoticeActivator(){
     if(elementNotice.classList.contains('active')){
@@ -31,10 +31,10 @@ function elementChatSettingActivator(){
 }
 
 function elementChangeAvatar(){
-    elementAvatar.setAttribute("style", "display:flex;")
+    elementAvatar.setAttribute('style', 'display:flex;')
 }
 
-function AddUser(){
+function addUser(){
     if(elementAddUser.classList.contains('active-flex')){
         elementAddUser.classList.remove('active-flex')
     } else {
@@ -43,7 +43,7 @@ function AddUser(){
     }
 }
 
-function DelUser(){
+function delUser(){
     if(elementDelUser.classList.contains('active-flex')){
         elementDelUser.classList.remove('active-flex')
     } else {
@@ -62,17 +62,17 @@ function addFileActivator(){
 
 function search(){
     var input, filter, ul, li, a, i, txtValue;
-    input = document.getElementById("searchInput");
+    input = document.getElementById('searchInput');
     filter = input.value.toUpperCase();
-    ul = document.getElementById("myUL");
-    li = ul.getElementsByTagName("li");
+    ul = document.getElementById('myUL');
+    li = ul.getElementsByTagName('li');
     for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
+        a = li[i].getElementsByTagName('a')[0];
         txtValue = a.textContent || a.innerText;
         if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
+            li[i].style.display = '';
         } else {
-            li[i].style.display = "none";
+            li[i].style.display = 'none';
         }
     }
 }

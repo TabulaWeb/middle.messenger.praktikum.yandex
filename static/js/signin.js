@@ -1,11 +1,11 @@
 function signinButton(){
-    let inputMail = document.querySelector("#email").value
-    let inputLogin = document.querySelector("#display_name").value
-    let inputFirstName = document.querySelector("#first_name").value
-    let inputSecondName = document.querySelector("#second_name").value
-    let inputPhone = document.querySelector("#phone").value
-    let inputPassword = document.querySelector("#password").value
-    let inputPasswordTwo = document.querySelector("#passwordTwo").value
+    let inputMail = document.querySelector('#email').value
+    let inputLogin = document.querySelector('#display_name').value
+    let inputFirstName = document.querySelector('#first_name').value
+    let inputSecondName = document.querySelector('#second_name').value
+    let inputPhone = document.querySelector('#phone').value
+    let inputPassword = document.querySelector('#password').value
+    let inputPasswordTwo = document.querySelector('#passwordTwo').value
     let textError = document.querySelector('.error_signin')
 
     let CreateUser = {
