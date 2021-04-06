@@ -1,16 +1,3 @@
 .content-header__search
   input#searchInput(type='search' onkeyup='search()' placeholder='Поиск')
 ul#myUL.content-header__items
-  for item in chatss
-    li.content-header__item
-        a.linkChat(href=item.link)
-            .content-header__item-img
-                img(src=item.avatar alt='')
-            .content-header__item-text
-                p.name-chat #{item.name}
-                p.anwser-chat #{item.message}
-            .content-header__item-time
-                p.day-chat #{item.time}
-            if item.notice >= 1
-              span.fav_count-aside.fav_count_header #{item.notice}
-  

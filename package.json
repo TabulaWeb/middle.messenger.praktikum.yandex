@@ -10,7 +10,7 @@
   "scripts": {
     "dev": "parcel static/index.pug",
     "backend": "node server.js",
-    "start": "npm run backend",
+    "start": "parcel build static/index.pug && npm run backend",
     "build": "parcel build static/index.pug"
   },
   "author": "TabulaWeb <67907195+TabulaWeb@users.noreply.github.com>",
