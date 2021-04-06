@@ -26,7 +26,10 @@
     "sass": "1.32.8"
   },
   "keywords": [],
-  "repository": "git+https://github.com/TabulaWeb/middle.messenger.praktikum.yandex.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TabulaWeb/middle.messenger.praktikum.yandex.git"
+  },
   "bugs": {
     "url": "https://github.com/TabulaWeb/middle.messenger.praktikum.yandex/issues"
   },
