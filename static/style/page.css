@@ -1,6 +1,6 @@
-@import 'bell.css';
-@import 'sidebar.css';
-@import 'header.css';
+@import './bell.css';
+@import './sidebar.css';
+@import './header.css';
 
 .content-main{
     display: flex;

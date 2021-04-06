@@ -1,7 +1,6 @@
 import express from 'express'
 import path from 'path'
 
-
 const __dirname = path.resolve()
 const app = express();
 const PORT = 3000;
@@ -11,10 +10,35 @@ app.set('views', path.resolve(__dirname, 'static'))
 
 app.use(express.static(path.resolve(__dirname, 'static')))
 
+let chatss = [
+    {name:'Андрей', avatar:'img/logochat.png', link:'/chat', time:'10:49', message:'Изображение', notice:'2'},
+    {name:'Киноклуб', avatar:'img/logochat.png', link:'/chat', time:'12:00', message:'Друзья, у меня для вас особенный выпуск новостей!...', notice:'1'},
+    {name:'Илья', avatar:'img/logochat.png', link:'/chat', time:'12:00', message:'Вы: стикер', notice:'1'},
+    {name:'Вадим', avatar:'img/logochat.png', link:'/chat', time:'12:00', message:'Друзья, у меня для вас особенный выпуск новостей!...', notice:'1'},
+    {name:'тет-а-теты', avatar:'img/logochat.png', link:'/chat', time:'12:00', message:'Друзья, у меня для вас особенный выпуск новостей!...', notice:'0'},
+    {name:'1, 2, 3', avatar:'img/logochat.png', link:'/chat', time:'12:00', message:'Друзья, у меня для вас особенный выпуск новостей!...', notice:'0'},
+    {name:'Design Destroyer', avatar:'img/logochat.png', link:'/chat', time:'12:00', message:'Друзья, у меня для вас особенный выпуск новостей!...', notice:'0'},
+    {name:'Day.', avatar:'img/logochat.png', link:'/chat', time:'12:00', message:'Друзья, у меня для вас особенный выпуск новостей!...', notice:'0'},
+    {name:'Стас Рогозин', avatar:'img/logochat.png', link:'/chat', time:'12:00', message:'Друзья, у меня для вас особенный выпуск новостей!...', notice:'0'},
+    {name:'Вася', avatar:'img/logochat.png', link:'/chat', time:'12:00', message:'Друзья, у меня для вас особенный выпуск новостей!...', notice:'0'},
+    {name:'Вася', avatar:'img/logochat.png', link:'/chat', time:'12:00', message:'Друзья, у меня для вас особенный выпуск новостей!...', notice:'0'},
+    {name:'Вася', avatar:'img/logochat.png', link:'/chat', time:'12:00', message:'Друзья, у меня для вас особенный выпуск новостей!...', notice:'0'},
+    {name:'Вася', avatar:'img/logochat.png', link:'/chat', time:'12:00', message:'Друзья, у меня для вас особенный выпуск новостей!...', notice:'0'},
+    {name:'Вася', avatar:'img/logochat.png', link:'/chat', time:'12:00', message:'Друзья, у меня для вас особенный выпуск новостей!...', notice:'0'},
+    {name:'Вася', avatar:'img/logochat.png', link:'/chat', time:'12:00', message:'Друзья, у меня для вас особенный выпуск новостей!...', notice:'0'},
+    {name:'Вася', avatar:'img/logochat.png', link:'/chat', time:'12:00', message:'Друзья, у меня для вас особенный выпуск новостей!...', notice:'0'},
+    {name:'Вася', avatar:'img/logochat.png', link:'/chat', time:'12:00', message:'Друзья, у меня для вас особенный выпуск новостей!...', notice:'0'},
+    {name:'Вася', avatar:'img/logochat.png', link:'/chat', time:'12:00', message:'Друзья, у меня для вас особенный выпуск новостей!...', notice:'0'},
+    {name:'Вася', avatar:'img/logochat.png', link:'/chat', time:'12:00', message:'Друзья, у меня для вас особенный выпуск новостей!...', notice:'0'},
+    {name:'Вася', avatar:'img/logochat.png', link:'/chat', time:'12:00', message:'Друзья, у меня для вас особенный выпуск новостей!...', notice:'1'},
+    {name:'Серёжа', avatar:'img/logochat.png', link:'/chat', time:'12:00', message:'Друзья, у меня для вас особенный выпуск новостей!...', notice:'1'}
+];
+
 // index Page Index
 app.get('/', (req, res) => {
     res.render('index', {
         title: 'Чаты',
+        chatss: chatss
     })
 })
 
@@ -22,6 +46,7 @@ app.get('/', (req, res) => {
 app.get('/chat', (req, res) => {
     res.render('chat', {
         title: 'Чат',
+        chatss: chatss
     })
 })
 

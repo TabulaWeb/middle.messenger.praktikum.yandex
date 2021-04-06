@@ -1,39 +1,16 @@
 .content-header__search
   input#searchInput(type='search' onkeyup='search()' placeholder='Поиск')
 ul#myUL.content-header__items
-  -
-    let chats = [
-        {name:'Андрей', avatar:'img/logochat.png', link:'/chat', time:'10:49', message:'Изображение', notice:'2'},
-        {name:'Киноклуб', avatar:'img/logochat.png', link:'/chat', time:'12:00', message:'Друзья, у меня для вас особенный выпуск новостей!...', notice:'1'},
-        {name:'Илья', avatar:'img/logochat.png', link:'/chat', time:'12:00', message:'Вы: стикер', notice:'1'},
-        {name:'Вадим', avatar:'img/logochat.png', link:'/chat', time:'12:00', message:'Друзья, у меня для вас особенный выпуск новостей!...', notice:'1'},
-        {name:'тет-а-теты', avatar:'img/logochat.png', link:'/chat', time:'12:00', message:'Друзья, у меня для вас особенный выпуск новостей!...', notice:'0'},
-        {name:'1, 2, 3', avatar:'img/logochat.png', link:'/chat', time:'12:00', message:'Друзья, у меня для вас особенный выпуск новостей!...', notice:'0'},
-        {name:'Design Destroyer', avatar:'img/logochat.png', link:'/chat', time:'12:00', message:'Друзья, у меня для вас особенный выпуск новостей!...', notice:'0'},
-        {name:'Day.', avatar:'img/logochat.png', link:'/chat', time:'12:00', message:'Друзья, у меня для вас особенный выпуск новостей!...', notice:'0'},
-        {name:'Стас Рогозин', avatar:'img/logochat.png', link:'/chat', time:'12:00', message:'Друзья, у меня для вас особенный выпуск новостей!...', notice:'0'},
-        {name:'Вася', avatar:'img/logochat.png', link:'/chat', time:'12:00', message:'Друзья, у меня для вас особенный выпуск новостей!...', notice:'0'},
-        {name:'Вася', avatar:'img/logochat.png', link:'/chat', time:'12:00', message:'Друзья, у меня для вас особенный выпуск новостей!...', notice:'0'},
-        {name:'Вася', avatar:'img/logochat.png', link:'/chat', time:'12:00', message:'Друзья, у меня для вас особенный выпуск новостей!...', notice:'0'},
-        {name:'Вася', avatar:'img/logochat.png', link:'/chat', time:'12:00', message:'Друзья, у меня для вас особенный выпуск новостей!...', notice:'0'},
-        {name:'Вася', avatar:'img/logochat.png', link:'/chat', time:'12:00', message:'Друзья, у меня для вас особенный выпуск новостей!...', notice:'0'},
-        {name:'Вася', avatar:'img/logochat.png', link:'/chat', time:'12:00', message:'Друзья, у меня для вас особенный выпуск новостей!...', notice:'0'},
-        {name:'Вася', avatar:'img/logochat.png', link:'/chat', time:'12:00', message:'Друзья, у меня для вас особенный выпуск новостей!...', notice:'0'},
-        {name:'Вася', avatar:'img/logochat.png', link:'/chat', time:'12:00', message:'Друзья, у меня для вас особенный выпуск новостей!...', notice:'0'},
-        {name:'Вася', avatar:'img/logochat.png', link:'/chat', time:'12:00', message:'Друзья, у меня для вас особенный выпуск новостей!...', notice:'0'},
-        {name:'Вася', avatar:'img/logochat.png', link:'/chat', time:'12:00', message:'Друзья, у меня для вас особенный выпуск новостей!...', notice:'0'},
-        {name:'Вася', avatar:'img/logochat.png', link:'/chat', time:'12:00', message:'Друзья, у меня для вас особенный выпуск новостей!...', notice:'1'},
-        {name:'Серёжа', avatar:'img/logochat.png', link:'/chat', time:'12:00', message:'Друзья, у меня для вас особенный выпуск новостей!...', notice:'1'},
-    ];
-  each chat in chats
+  for item in chatss
     li.content-header__item(onclick='addActiveLink()')
-        a.linkChat(href=chat.link)
+        a.linkChat(href=item.link)
             .content-header__item-img
-                img(src=chat.avatar alt='')
+                img(src=item.avatar alt='')
             .content-header__item-text
-                p.name-chat #{chat.name}
-                p.anwser-chat #{chat.message}
+                p.name-chat #{item.name}
+                p.anwser-chat #{item.message}
             .content-header__item-time
-                p.day-chat #{chat.time}
-            if chat.notice >= 1
-              span.fav_count-aside.fav_count_header #{chat.notice}
+                p.day-chat #{item.time}
+            if item.notice >= 1
+              span.fav_count-aside.fav_count_header #{item.notice}
+  
