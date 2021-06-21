@@ -7,9 +7,9 @@ const app = express();
 const PORT = 3000;
 
 app.set('view engine', 'pug')
-app.set('views', path.resolve(__dirname, 'static'))
+app.set('views', path.resolve(__dirname, 'static/pages'))
 
-app.use(express.static(path.resolve(__dirname, 'static')))
+app.use(express.static(path.resolve(__dirname, 'static/pages')))
 
 // index Page Index
 app.get('/', (req, res) => {
