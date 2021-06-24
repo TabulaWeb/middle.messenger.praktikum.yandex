@@ -1,0 +1,47 @@
+img.account_img(src='../img/man.jpg' alt='Фото')
+.account_data
+  p.account_data-name Имя Пользователя
+  p.status_user
+    img.status_user-img(src='../img/clover.svg' alt='')
+    |  В сети
+img#flyoutIcon-exampl.account_detail(src='../img/arrow_down.svg' alt='' onclick='elementProfileActivator()')
+#flyout-exampl.info-account__block
+  nav.info-account__list
+    ul.info-account__items
+      li.info-account__item
+        #flyout-deb.flyout-debug
+        a(href='account.pug')
+          | Аккаунт
+          img(src='../img/right-arrow.svg' alt='')
+      li.info-account__item
+        a(href='/')
+          | Главная страница
+          img(src='../img/right-arrow.svg' alt='')
+      li.info-account__item
+        a(href='login.pug')
+          | Авторизация
+          img(src='../img/right-arrow.svg' alt='')
+      li.info-account__item
+        a(href='signin.pug')
+          | Регистрация
+          img(src='../img/right-arrow.svg' alt='')
+      li.info-account__item
+        a(href='chat.pug')
+          | Чат
+          img(src='../img/right-arrow.svg' alt='')
+      li.info-account__item
+        a(href='accountedit.pug')
+          | Изменить данные
+          img(src='../img/right-arrow.svg' alt='')
+      li.info-account__item
+        a(href='resetpassword.pug')
+          | Изменить пароль
+          img(src='../img/right-arrow.svg' alt='')
+      li.info-account__item
+        a(href='404.pug')
+          | 404
+          img(src='../img/right-arrow.svg' alt='')
+      li.info-account__item
+        a(href='500.pug')
+          | 500
+          img(src='../img/right-arrow.svg' alt='')

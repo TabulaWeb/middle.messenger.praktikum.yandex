@@ -1,6 +1,6 @@
 doctype html
 head
-    include ../Component/Head.pug
+    include ../Component/head/Head.pug
 section.section-login
   .section-login__welcome
     h1 Добро Пожаловать
@@ -8,7 +8,7 @@ section.section-login
   .section-login__form
     .section-login__form-content
 
-        form#form
+        form(class="form" id="form")
           label
             p Логин
             input#login(type='text' placeholder='Введите логин' name='login')

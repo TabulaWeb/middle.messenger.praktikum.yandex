@@ -1,0 +1,27 @@
+.bell_img
+  span.fav_count.fav_count_header 1
+  img#flyoutIcon-example(onclick='elementNoticeActivator()' src='../img/bell.svg' alt='Уведомление')
+  #flyout-example.bell_block(onclick='elementBlockNoticeActivator()')
+    .bell_block-title
+      p Уведомления
+    #flyout-debug.flyout-debug
+    nav.bell-link__list
+      ul.bell_items
+        li.bell_item
+          a(href='#')
+            .bell_item-userAnswer
+              img(src='../img/logochat.png' alt='')
+              .bell_item-text
+                p Имя пользователя
+                p Что-то написал бла-бла-бла-бла
+            .bell_item-time
+              p Пять дней назад
+        li.bell_item
+          a(href='#')
+            .bell_item-userAnswer
+              img(src='../img/logochat.png' alt='')
+              .bell_item-text
+                p Имя пользователя
+                p Что-то написал бла-бла-бла-бла
+            .bell_item-time
+              p Пять дней назад

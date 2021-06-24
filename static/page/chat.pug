@@ -1,14 +1,14 @@
 doctype html
 head
-    include ../Component/Head.pug
+    include ../Component/head/Head.pug
 header.content-header
-    include ../Component/Header.pug
+    include ../Component/header/Header.pug
 main.content-main
   aside.content-aside_chat
-    include ../Component/Sidebar.pug
+    include ../Component/sidebar/Sidebar.pug
   section.content-section
     .content-section_title
-      include ../Component/TitleChat.pug
+      include ../Component/titlechat/TitleChat.pug
       #flyout.chat-setting__block
         .chat-setting__block-element
           button(onclick='AddUser()')
@@ -19,7 +19,7 @@ main.content-main
             img(src='../img/plusUser.svg' alt='')
             p Удалить пользователя
     .content-section_chat
-        include ../Component/ContentChat.pug
+        include ../Component/chatcontent/ContentChat.pug
 .chatAddUser__wriper
   .chatAddUser
     .chatAddUser__title
@@ -39,4 +39,4 @@ main.content-main
         input(type='text')
       button Удалить
 script(src='../js/index.ts')
-script(src="../Component/tooltip/tooltip.ts")
+script(src="../Component/chatform/tooltip.ts")
