@@ -1038,6 +1038,7 @@ body {
 
 .accountEditSave {
   width: 20%;
+  display: block;
   font-size: 13px;
   font-weight: 500;
   padding: 12px 0;
@@ -1045,6 +1046,7 @@ body {
   background-color: #8f8f8f;
   cursor: pointer;
   border-radius: 8px;
+  margin: 0 auto;
 }
 
 .add-avatar__wripper {

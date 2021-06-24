@@ -12,24 +12,25 @@ main.content-main
       .section-account__content-avatar
         img(src='../img/noavatar.svg' alt='')
       .section-account__content-profile
-        .content-profile__item
-          p Почта
-          input#mail(type='text' placeholder='pochta@yandex.ru' name='mail')
-        .content-profile__item
-          p Логин
-          input#login(type='text' placeholder='ivanivanov' name='login')
-        .content-profile__item
-          p Имя
-          input#first_name(type='text' placeholder='Иван' name='first_name')
-        .content-profile__item
-          p Фамилия
-          input#second_name(type='text' placeholder='Иванов' name='second_name')
-        .content-profile__item
-          p Имя в чате
-          input#display_name(type='text' placeholder='Иван' name='display_name')
-        .content-profile__item
-          p Телефон
-          input#phone(type='text' placeholder='+7 (909) 967 30 30' name='phone')
-      button.accountEditSave(onclick='editProfile()') Сохранить
+        form(id="form")
+          .content-profile__item
+            p Почта
+            input#mail(type='text' placeholder='pochta@yandex.ru' name='mail')
+          .content-profile__item
+            p Логин
+            input#login(type='text' placeholder='ivanivanov' name='login')
+          .content-profile__item
+            p Имя
+            input#first_name(type='text' placeholder='Иван' name='first_name')
+          .content-profile__item
+            p Фамилия
+            input#second_name(type='text' placeholder='Иванов' name='second_name')
+          .content-profile__item
+            p Имя в чате
+            input#display_name(type='text' placeholder='Иван' name='display_name')
+          .content-profile__item
+            p Телефон
+            input#phone(type='text' placeholder='+7 (909) 967 30 30' name='phone')
+          button.accountEditSave(type='submit') Сохранить
 script(src="../js/index.ts")
-script(src="../js/accountEdit.ts")
+script(src="../js/form.ts")

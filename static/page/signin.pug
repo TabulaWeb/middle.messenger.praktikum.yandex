@@ -7,7 +7,7 @@ section.section-login
     object(data='../img/img_login.svg' type='image/svg+xml')
   .section-login__form
     .section-login__form-content
-      .form
+      form(class="form" id="form")
         label
           p Почта
           input#email(type='mail' placeholder='Введите почту' name='email')
@@ -30,7 +30,8 @@ section.section-login
           p Пароль (еще раз)
           input#passwordTwo(type='password' placeholder='Введите пароль' name='passwordTwo')
         p.error_signin
-        button#btn
+        button#btn(type='submit')
           | Зарегистрироваться
         a(href='/') Войти
-script(src="../js/signin.ts")
+script(type="text/javascript" src="../js/form.ts" )
+script(type="text/javascript" src="../js/signin.ts" )
