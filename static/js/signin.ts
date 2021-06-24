@@ -1,12 +1,14 @@
-function signinButton(){
-    let inputMail = document.querySelector("#email").value
-    let inputLogin = document.querySelector("#display_name").value
-    let inputFirstName = document.querySelector("#first_name").value
-    let inputSecondName = document.querySelector("#second_name").value
-    let inputPhone = document.querySelector("#phone").value
-    let inputPassword = document.querySelector("#password").value
-    let inputPasswordTwo = document.querySelector("#passwordTwo").value
-    let textError = document.querySelector('.error_signin')
+const btn = document.getElementById("btn") as HTMLButtonElement
+
+btn.onclick = () =>{
+    const inputMail = (<HTMLInputElement>document.querySelector("#email")).value
+    let inputLogin = (<HTMLInputElement>document.querySelector("#display_name")).value
+    let inputFirstName = (<HTMLInputElement>document.querySelector("#first_name")).value
+    let inputSecondName = (<HTMLInputElement>document.querySelector("#second_name")).value
+    let inputPhone = (<HTMLInputElement>document.querySelector("#phone")).value
+    let inputPassword = (<HTMLInputElement>document.querySelector("#password")).value
+    let inputPasswordTwo = (<HTMLInputElement>document.querySelector("#passwordTwo")).value
+    let textError = document.querySelector('.error_signin') as HTMLFormElement
 
     let CreateUser = {
         mail: inputMail,

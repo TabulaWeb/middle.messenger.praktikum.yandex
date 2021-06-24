@@ -11,7 +11,7 @@ main.content-main
     .section-account__content
       .section-account__content-avatar
         #flyoutIcon-exa.content-avatar__img(onclick='elementChangeAvatar()')
-          img(src='img/noavatar.svg' alt='')
+          img(src='../img/noavatar.svg' alt='')
         p Имя пользователя
       .section-account__content-profile
         .content-profile__item
@@ -36,9 +36,9 @@ main.content-main
         nav.section-account__navigation
           ul.section-account__navigation-list
             li.section-account__navigation-item
-              a(href='/accountedit') Изменить данные
+              a(href='accountedit.pug') Изменить данные
             li.section-account__navigation-item
-              a(href='/resetpassword') Изменить пароль
+              a(href='resetpassword.pug') Изменить пароль
             li.section-account__navigation-item
               a(href='/login') Выйти
 .add-avatar__wripper
@@ -52,6 +52,5 @@ main.content-main
       p#upload-message.fileUploader__message
     button.changeFileButton(onclick='changeFile()') Поменять
     p.FileForm__error
-script
-  include index.js
-  include ../js/change.js
+script(src='../js/index.ts')
+script(src='../js/change.ts')

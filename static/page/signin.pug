@@ -4,7 +4,7 @@ head
 section.section-login
   .section-login__welcome
     h1 Добро Пожаловать
-    object(data='img/img_login.svg' type='image/svg+xml')
+    object(data='../img/img_login.svg' type='image/svg+xml')
   .section-login__form
     .section-login__form-content
       .form
@@ -30,8 +30,7 @@ section.section-login
           p Пароль (еще раз)
           input#passwordTwo(type='password' placeholder='Введите пароль' name='passwordTwo')
         p.error_signin
-        button(onclick='signinButton()')
+        button#btn
           | Зарегистрироваться
         a(href='/') Войти
-script 
-  include ../js/signin.js
+script(src="../js/signin.ts")

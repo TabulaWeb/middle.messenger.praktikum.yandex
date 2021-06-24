@@ -8,10 +8,10 @@
   "main": "index.pug",
   "type": "module",
   "scripts": {
-    "dev": "parcel static/pages/index.pug",
+    "dev": "parcel static/page/index.pug",
     "backend": "node server.js",
-    "start": "parcel build static/pages/index.pug && npm run backend",
-    "build": "parcel build static/pages/index.pug"
+    "start": "parcel build static/page/index.pug && npm run backend",
+    "build": "parcel build static/page/index.pug"
   },
   "author": "TabulaWeb <67907195+TabulaWeb@users.noreply.github.com>",
   "license": "ISC",
@@ -32,5 +32,8 @@
   "bugs": {
     "url": "https://github.com/TabulaWeb/middle.messenger.praktikum.yandex/issues"
   },
-  "homepage": "https://github.com/TabulaWeb/middle.messenger.praktikum.yandex#readme"
+  "homepage": "https://github.com/TabulaWeb/middle.messenger.praktikum.yandex#readme",
+  "dependencies": {
+    "ts-node": "^10.0.0"
+  }
 }

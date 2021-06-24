@@ -1,20 +1,22 @@
-let elementNotice = document.querySelector('.bell_block')
-let elementProfile = document.querySelector('.info-account__block')
-let elementChatSetting = document.querySelector('.chat-setting__block')
-let elementAvatar = document.querySelector('.add-avatar__wripper')
-let elementAddUser = document.querySelector('.chatAddUser__wriper')
-let elementDelUser = document.querySelector('.chatDelUser__wriper')
-let elementAddFile = document.querySelector('.block_addfile')
+let elementNotice = document.querySelector('.bell_block') as HTMLImageElement;
+let elementProfile = document.querySelector('.info-account__block') as HTMLImageElement;
+let elementChatSetting = document.querySelector('.chat-setting__block') as HTMLImageElement;
+let elementAvatar = document.querySelector('.add-avatar__wripper') as HTMLImageElement;
+let elementAddUser = document.querySelector('.chatAddUser__wriper') as HTMLImageElement;
+let elementDelUser = document.querySelector('.chatDelUser__wriper') as HTMLImageElement;
+let elementAddFile = document.querySelector('.block_addfile') as HTMLImageElement;
 
-function elementNoticeActivator(){
+window.elementNoticeActivator= elementNoticeActivator;
+function elementNoticeActivator(): void{
     if(elementNotice.classList.contains('active')){
-        elementNotice.classList.remove('active')
+        elementNotice.classList.remove('active');
     } else {
-        elementNotice.classList.add('active')
+        elementNotice.classList.add('active');
     }
 }
 
-function elementProfileActivator(){
+window.elementProfileActivator= elementProfileActivator;
+function elementProfileActivator(): void{
     if(elementProfile.classList.contains('active')){
         elementProfile.classList.remove('active')
     } else {
@@ -22,7 +24,8 @@ function elementProfileActivator(){
     }
 }
 
-function elementChatSettingActivator(){
+window.elementChatSettingActivator= elementChatSettingActivator;
+function elementChatSettingActivator(): void{
     if(elementChatSetting.classList.contains('active')){
         elementChatSetting.classList.remove('active')
     } else {
@@ -30,11 +33,13 @@ function elementChatSettingActivator(){
     }
 }
 
-function elementChangeAvatar(){
+window.elementChangeAvatar= elementChangeAvatar;
+function elementChangeAvatar(): void{
     elementAvatar.setAttribute("style", "display:flex;")
 }
 
-function AddUser(){
+window.AddUser= AddUser;
+function AddUser(): void{
     if(elementAddUser.classList.contains('active-flex')){
         elementAddUser.classList.remove('active-flex')
     } else {
@@ -43,7 +48,8 @@ function AddUser(){
     }
 }
 
-function DelUser(){
+window.DelUser= DelUser;
+function DelUser(): void{
     if(elementDelUser.classList.contains('active-flex')){
         elementDelUser.classList.remove('active-flex')
     } else {
@@ -52,7 +58,8 @@ function DelUser(){
     }
 }
 
-function addFileActivator(){
+window.addFileActivator= addFileActivator;
+function addFileActivator(): void{
     if(elementAddFile.classList.contains('active-flex')){
         elementAddFile.classList.remove('active-flex')
     } else {
@@ -60,10 +67,17 @@ function addFileActivator(){
     }
 }
 
-function search(){
-    var input, filter, ul, li, a, i, txtValue;
+window.search= search;
+function search(): void{
+    let input;
+    let filter;
+    let ul;
+    let li;
+    let a;
+    let i;
+    let txtValue;
     input = document.getElementById("searchInput");
-    filter = input.value.toUpperCase();
+    filter = (<HTMLInputElement>input).value.toUpperCase();
     ul = document.getElementById("myUL");
     li = ul.getElementsByTagName("li");
     for (i = 0; i < li.length; i++) {

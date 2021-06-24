@@ -10,7 +10,7 @@ main.content-main
     .content-section_title
     .section-account__content
       .section-account__content-avatar
-        img(src='img/noavatar.svg' alt='')
+        img(src='../img/noavatar.svg' alt='')
       .section-account__content-profile
         .content-profile__item
           p Почта
@@ -31,6 +31,5 @@ main.content-main
           p Телефон
           input#phone(type='text' placeholder='+7 (909) 967 30 30' name='phone')
       button.accountEditSave(onclick='editProfile()') Сохранить
-script
-  include index.js
-  include ../js/accountEdit.js
+script(src="../js/index.ts")
+script(src="../js/accountEdit.ts")

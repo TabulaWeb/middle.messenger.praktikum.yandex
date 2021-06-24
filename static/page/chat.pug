@@ -12,11 +12,11 @@ main.content-main
       #flyout.chat-setting__block
         .chat-setting__block-element
           button(onclick='AddUser()')
-            img(src='img/plusUser.svg' alt='')
+            img(src='../img/plusUser.svg' alt='')
             p Добавить пользователя
         .chat-setting__block-element
           button(onclick='DelUser()')
-            img(src='img/plusUser.svg' alt='')
+            img(src='../img/plusUser.svg' alt='')
             p Удалить пользователя
     .content-section_chat
         include ../Component/ContentChat.pug
@@ -38,5 +38,5 @@ main.content-main
         p Логин
         input(type='text')
       button Удалить
-script
-  include index.js
+script(src='../js/index.ts')
+script(src="../Component/tooltip/tooltip.ts")

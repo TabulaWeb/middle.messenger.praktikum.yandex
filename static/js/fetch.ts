@@ -5,7 +5,7 @@ const METHODS = {
     DELETE: 'DELETE',
 };
 
-function queryStringify(data) {
+function queryStringify(data: any) {
 if (typeof data !== 'object') {
         throw new Error('Data must be object');
 }
@@ -17,8 +17,8 @@ return `${result}${key}=${data[key]}${index < keys.length - 1 ? '&' : ''}`;
 }
 
 class HTTPTransport {
-    get = (url, options = {}) => {
-             
+    get = (url: any, options = {}) => {
+
             return this.request(url, {...options, method: METHODS.GET}, options.timeout);
     };
 
@@ -30,12 +30,12 @@ class HTTPTransport {
             return this.request(url, {...options, method: METHODS.PUT}, options.timeout);
     };
 
-    delete = (url, options = {}) => { 
+    delete = (url, options = {}) => {
             return this.request(url, {...options, method: METHODS.DELETE}, options.timeout);
     };
 
     request = (url, options = {}, timeout = 5000) => {
-            const {headers = {}, method, data} = options;
+            const {headers, method  , data} = options;
 
             return new Promise(function(resolve, reject) {
                     if (!method) {
@@ -47,7 +47,7 @@ class HTTPTransport {
                     const isGet = method === METHODS.GET;
 
                 xhr.open(
-                            method, 
+                            method,
                             isGet && !!data
                                     ? `${url}${queryStringify(data)}`
                                     : url,
@@ -56,17 +56,17 @@ class HTTPTransport {
                     Object.keys(headers).forEach(key => {
                             xhr.setRequestHeader(key, headers[key]);
                     });
-            
+
                 xhr.onload = function() {
                       resolve(xhr);
                 };
-            
+
                 xhr.onabort = reject;
                 xhr.onerror = reject;
-            
+
                 xhr.timeout = timeout;
                 xhr.ontimeout = reject;
-                    
+
                   if (isGet || !data) {
                         xhr.send();
                     } else {

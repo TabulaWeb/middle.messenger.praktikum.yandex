@@ -1,13 +1,13 @@
-function fileUploader(elem) {
+function fileUploader(elem: any): void {
     const inputElem = document.querySelector("#" + elem);
     const outputElem = document.querySelector("#upload-message");
-  
+
     inputElem.addEventListener("change", function () {
       const fileList = inputElem.files[0];
       const uploadReader = new FileReader();
-  
+
       outputElem.setAttribute("style", "display:block;")
-      outputElem.innerHTML = fileList.name 
+      outputElem.innerHTML = fileList.name
       uploadReader.readAsDataURL(fileList);
       if(document.getElementById("upload").files.length >= 1){
           document.querySelector('.fileUploader__button').setAttribute("style", "display:none;")
@@ -19,7 +19,7 @@ function changeFile(){
     let nameInputElem = document.querySelector("#upload");
     let fileList = nameInputElem.files[0];
     let TextOutputElem = document.querySelector("#upload-message");
-    
+
 
     if(nameInputElem.files.length <= 0){
         return document.querySelector('.FileForm__error').textContent = "Нужно выбрать файл"
