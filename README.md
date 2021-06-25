@@ -6,7 +6,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/46e58094-f587-4fdf-a298-6fa244eab314/deploy-status)](https://app.netlify.com/sites/distracted-bell-22dc51/deploys)
 
 - [макет в figme](https://www.figma.com/file/lToVz5nCcFLJKMIpqYsvEg/Messanger?node-id=0%3A1)
-- [sprint_2](https://github.com/TabulaWeb/middle.messenger.praktikum.yandex/pull/13)
+- [sprint_2](https://github.com/TabulaWeb/middle.messenger.praktikum.yandex/pull/14)
 
 ## Добавленный функционал:
 * TypeScript
