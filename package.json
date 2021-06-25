@@ -8,7 +8,7 @@
   "main": "index.pug",
   "type": "module",
   "scripts": {
-    "dev": "parcel static/page/index.pug",
+    "dev": "parcel static/page/index.pug --port 3000",
     "backend": "node server.js",
     "start": "parcel build static/page/index.pug && npm run backend",
     "build": "parcel build static/page/index.pug"
