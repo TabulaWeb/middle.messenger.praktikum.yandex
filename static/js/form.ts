@@ -1,5 +1,5 @@
 const isCheckboxOrRadio = type => ['checkbox', 'radio'].includes(type);
-const {form} = document.forms as HTMLCollection
+const {form} = document.forms as HTMLCollectionOf<HTMLElement>
 
 function retrieveFormValue(event: { preventDefault: () => void; }){
   event.preventDefault()
