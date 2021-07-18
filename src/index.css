@@ -1,0 +1,11 @@
+@import './Pages/app/app.css';
+@import './Components/header/header.css';
+@import './Components/sidebar/sidebar.css';
+@import './Components/sidebarAccount/sidebarAccount.css';
+@import './Pages/PageMain/pageMain.css';
+@import './Components/contentChat/contentChat.css';
+@import './Components/contentAccount/contentAccount.css';
+@import './Components/contentAccountedit/contentAccountedit.css';
+@import './Components/contentLogin/contentLogin.css';
+@import './Components/contentRegister/contentRegister.css';
+@import './Components/editAvatar/editAvatar.css';

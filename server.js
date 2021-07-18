@@ -1,16 +1,16 @@
 import express from 'express';
 import path from 'path';
-
+import exphbs from "express-handlebars"
 
 const __dirname = path.resolve();
 const app = express();
 const PORT = 3000;
 
-app.set('view engine', 'pug');
+app.set('view engine', 'handlebars');
 app.set('views', path.resolve(__dirname, 'static/page'));
 
 app.use(express.static(path.resolve(__dirname, 'static')));
-
+console.log(__dirname);
 // index Page Index
 app.get('/', (req, res) => {
   res.render('index', {

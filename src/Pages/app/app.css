@@ -1,0 +1,31 @@
+*{
+  box-sizing: border-box;
+  outline: none;
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Roboto';
+}
+
+.app{
+  width: 100%;
+}
+
+.active {
+  display: block!important;
+}
+
+#current-page {
+  display: flex;
+  flex-direction: row;
+  padding: 2px 0 0;
+  height: calc(100vh - 67px);
+}
+
+input:valid:not(:placeholder-shown) {
+  border-color: green!important;
+}
+
+input:invalid:not(:placeholder-shown) {
+  border-color: red!important;
+}

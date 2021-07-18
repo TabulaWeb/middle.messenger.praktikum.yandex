@@ -1,0 +1,24 @@
+.content-aside__account {
+  max-width: max-content;
+  -webkit-box-shadow: 2px 0 0 0 rgb(143 143 143 / 20%);
+  -moz-box-shadow: 2px 0 0 0 hsla(0,0%,56.1%,.2);
+  box-shadow: 2px 0 0 0 rgb(143 143 143 / 20%);
+  background-color: #fafbfc;
+  padding-left: 2%;
+  padding-right: 2%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  min-width: 65px;
+  height: calc(100vh - 68px);
+  justify-content: center;
+}
+
+.link_back {
+  cursor: pointer;
+  background-image: url(../../../static/img/arrow_account.svg);
+  background-repeat: no-repeat;
+  width: 28px;
+  height: 35px;
+  background-position: center;
+}

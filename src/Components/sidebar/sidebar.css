@@ -1,0 +1,112 @@
+.content-aside_chat {
+  max-width: 310px;
+  -webkit-box-shadow: 2px 0 0 0 rgb(143 143 143 / 20%);
+  -moz-box-shadow: 2px 0 0 0 hsla(0,0%,56.1%,.2);
+  box-shadow: 2px 0 0 0 rgb(143 143 143 / 20%);
+  background-color: var(--main-bgtwo);
+  width: 100%;
+}
+
+.content-header__search {
+  padding: 14px 0;
+  margin-right: 10px;
+  border-bottom: 1px solid #eaeaea;
+  margin-left: 12px;
+}
+
+.content-header__search input {
+  width: 100%;
+  border-radius: 5px;
+  background: #efefef;
+  padding: 10px 10px 10px 25px;
+  background-image: url(../../../static/img/Union.png);
+  background-repeat: no-repeat;
+  background-position: 5px;
+  outline: none;
+  border: 0px;
+}
+
+.content-header__items {
+  overflow: auto;
+  max-height: calc(100vh - 137px);
+}
+
+.content-header__item a {
+  display: flex;
+  position: relative;
+  padding: 12px;
+  align-items: end;
+  color: #000;
+  height: 72.41px;
+}
+
+.content-header__item-img {
+  margin-right: 10px;
+  display: flex;
+}
+
+.content-header__item-time {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
+.fav_count-aside {
+  background: #b70000;
+  color: #fff;
+  display: block;
+  justify-content: center;
+  text-align: center;
+  line-height: 15px;
+  border-radius: 15px;
+  text-decoration: none!important;
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+}
+
+.fav_count_header {
+  width: 18px;
+  height: 18px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+}
+
+.name-chat {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.anwser-chat {
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 4px;
+  max-width: 180px;
+}
+
+.day-chat {
+  font-size: 9px;
+}
+
+.content-header__items::-webkit-scrollbar {
+  width: 10px;
+}
+
+.content-header__items::-webkit-scrollbar-thumb {
+  background-color: #8f8f8f;
+  width: 8px;
+  border-radius: 25px;
+}
+
+
+.asideBlock{
+  max-width: 310px;
+  width: 100%;
+
+  -webkit-box-shadow: 2px 0 0 0 rgb(143 143 143 / 20%);
+    -moz-box-shadow: 2px 0 0 0 hsla(0,0%,56.1%,.2);
+  box-shadow: 2px 0 0 0 rgb(143 143 143 / 20%);
+
+  background-color: #fafbfc;
+}
