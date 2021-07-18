@@ -8,6 +8,7 @@
 - [макет в figme](https://www.figma.com/file/lToVz5nCcFLJKMIpqYsvEg/Messanger?node-id=0%3A1)
 - [sprint_2](https://github.com/TabulaWeb/middle.messenger.praktikum.yandex/pull/14)
 
+
 ## Добавленный функционал:
 * TypeScript
 * BLock
