@@ -10,8 +10,6 @@ class PageError extends Error {
   }
 
   render(){
-    // const title = this.createHeaderTitle(PageError.TextObject.mainTitle)
-    // this.container.append(title)
     return this.container
   }
 }
