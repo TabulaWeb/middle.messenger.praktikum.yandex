@@ -1,0 +1,19 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": ["eslint:recommended", "google"],
+    "lib": "es2019",
+    "rules": {
+
+    },
+    "parserOptions": {
+      "sourceType": "module"
+    },
+    "compilerOptions": {
+      "lib": [
+        "es2019"
+      ]
+    }
+}

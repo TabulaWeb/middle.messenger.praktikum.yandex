@@ -5,28 +5,38 @@
   },
   "version": "1.0.0",
   "description": "yapr messanger",
-  "main": "index.pug",
   "type": "module",
   "scripts": {
-    "dev": "parcel static/index.pug",
+    "dev": "parcel ./static/*.html  --port 3000",
     "backend": "node server.js",
-    "start": "parcel build static/index.pug && npm run backend",
-    "build": "parcel build static/index.pug"
+    "start": "parcel build static/index.html && npm run backend",
+    "build": "parcel build static/index.html"
   },
   "author": "TabulaWeb <67907195+TabulaWeb@users.noreply.github.com>",
   "license": "ISC",
-  "dependencies": {},
   "devDependencies": {
+    "@types/node": "^16.0.0",
+    "@types/pug": "^2.0.4",
+    "eslint": "^7.29.0",
+    "eslint-config-google": "^0.14.0",
     "express": "^4.17.1",
+    "handlebars": "^4.7.7",
     "parcel-bundler": "^1.12.5",
-    "pug": "^3.0.2",
-    "pug-loader": "^2.4.0",
-    "sass": "^1.32.8"
+    "sass": "^1.32.8",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^22.0.0",
+    "typescript": "^4.3.4"
   },
   "keywords": [],
   "repository": "git+https://github.com/TabulaWeb/middle.messenger.praktikum.yandex.git",
   "bugs": {
     "url": "https://github.com/TabulaWeb/middle.messenger.praktikum.yandex/issues"
   },
-  "homepage": "https://github.com/TabulaWeb/middle.messenger.praktikum.yandex#readme"
+  "homepage": "https://github.com/TabulaWeb/middle.messenger.praktikum.yandex#readme",
+  "dependencies": {
+    "a": "^2.1.2",
+    "express-handlebars": "^5.3.2",
+    "parcel-plugin-handlebars": "^0.4.4",
+    "ts-node": "^10.0.0"
+  }
 }

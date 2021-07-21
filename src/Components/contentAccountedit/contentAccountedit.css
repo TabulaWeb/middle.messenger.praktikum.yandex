@@ -1,0 +1,19 @@
+.content-profile__item input{
+  border: 0;
+}
+
+.content-profile__item input::placeholder{
+  text-align: right;
+}
+
+.accountEditSave button{
+  width: 20%;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 12px 0;
+  color: #fff;
+  background-color: #8f8f8f;
+  cursor: pointer;
+  border-radius: 8px;
+  border: 0;
+}
