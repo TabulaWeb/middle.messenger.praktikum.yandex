@@ -1,10 +1,10 @@
-import Block from "../../Scripts/block";
+import Block from '../../Scripts/block';
 import { template } from './headerNotice.tmpl'
-
+import './headerNotice.css'
 
 export default class HeaderNotice extends Block {
   constructor(props) {
-    super("div", props);
+    super('div', props);
   }
 
   render() {

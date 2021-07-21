@@ -1,34 +1,34 @@
-import Chat from "../../Templates/chat";
-import Error from "../../Templates/error";
-import Account from "../../Templates/account";
-import Login from "../../Templates/login";
-import PageMain from "../PageMain";
-import PageChat from "../PageChat";
-import PageLogin from "../PageLogin";
-import PageSignin from "../PageSignin";
-import PageAccount from "../PageAccount";
-import PageAccountedit from "../PageAccountEdit";
-import PageResetpass from "../PageResetpass";
-import PageError from "../PageError";
-import Header from "../../Components/header";
-import Sidebar from "../../Components/sidebar";
-import SidebarAccount from "../../Components/sidebarAccount";
-import ContentChat from "../../Components/contentChat";
-import ContentAccount from "../../Components/contentAccount";
-import ContentAccountEdit from "../../Components/contentAccountedit";
-import ContentAccountPas from "../../Components/contentAccountpas";
-import ContentLogin from "../../Components/contentLogin";
-import ContentRegister from "../../Components/contentRegister";
-import HeaderNotice from "../../Components/HeaderNotice";
-import HeaderAccount from "../../Components/HeaderAccount";
-import EditAvatar from "../../Components/editAvatar";
-import Button from "../../Components/button";
-import formdata from "../../Scripts/formData";
-import validationForm from "../../Scripts/formValidation";
-import Input from "../../Components/input";
+import Chat from '../../Templates/chat';
+import Error from '../../Templates/error';
+import Account from '../../Templates/account';
+import Login from '../../Templates/login';
+import PageMain from '../PageMain';
+import PageChat from '../PageChat';
+import PageLogin from '../PageLogin';
+import PageSignin from '../PageSignin';
+import PageAccount from '../PageAccount';
+import PageAccountedit from '../PageAccountEdit';
+import PageResetpass from '../PageResetpass';
+import PageError from '../PageError';
+import Header from '../../Components/header';
+import Sidebar from '../../Components/sidebar';
+import SidebarAccount from '../../Components/sidebarAccount';
+import ContentChat from '../../Components/contentChat';
+import ContentAccount from '../../Components/contentAccount';
+import ContentAccountEdit from '../../Components/contentAccountedit';
+import ContentAccountPas from '../../Components/contentAccountpas';
+import ContentLogin from '../../Components/contentLogin';
+import ContentRegister from '../../Components/contentRegister';
+import HeaderNotice from '../../Components/HeaderNotice';
+import HeaderAccount from '../../Components/HeaderAccount';
+import EditAvatar from '../../Components/editAvatar';
+import Button from '../../Components/button';
+import formdata from '../../Scripts/formData';
+import validationForm from '../../Scripts/formValidation';
+import Input from '../../Components/input';
 import { rendering } from '../../Scripts/renderDOM';
-import { DataHeader } from "../../Components/header/data";
-import { DataSidebar } from "../../Components/sidebar/data";
+import { DataHeader } from '../../Components/header/data';
+import { DataSidebar } from '../../Components/sidebar/data';
 import { DataNotice } from '../../Components/HeaderNotice/data'
 
 export const enum PageIds {
@@ -216,7 +216,7 @@ class App {
     this.contentchat = new ContentChat({
       ChatDate: '19 июня',
       TitleChat: 'Имя пользователя',
-      TitleImg: '../img/bell.svg',
+      TitleImg: '../../../static/img/bell.svg',
       MesssageTime: '12:00',
       MesssageTimeTwo: '12:20',
       MesssageTimeThree: '12:50',
@@ -318,10 +318,10 @@ class App {
               avatar: null
             }
             let Filename = document.querySelector('#upload-message')
-            let setNameFile = document.querySelector("#upload").files
+            let setNameFile = document.querySelector('#upload').files
             //Нужно выбрать файл
             if(setNameFile.length<= 0){
-              return document.querySelector('.FileForm__error').textContent = "Нужно выбрать файл"
+              return document.querySelector('.FileForm__error').textContent = 'Нужно выбрать файл'
             }
 
             imgAvatar.avatar = setNameFile[0].name

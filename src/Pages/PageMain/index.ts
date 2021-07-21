@@ -1,4 +1,5 @@
 import Chat from '../../Templates/chat'
+import './PageMain.css'
 
 const asideHTML = document.createElement('aside')
 const mainTitle = document.createElement('h1')

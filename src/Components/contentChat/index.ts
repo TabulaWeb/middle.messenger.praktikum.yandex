@@ -1,10 +1,10 @@
-import Block from "../../Scripts/block";
+import Block from '../../Scripts/block';
 import { template } from './contentChat.tmpl'
-
+import './contentChat.css'
 
 export default class ContentChat extends Block {
   constructor(props) {
-    super("div", props);
+    super('div', props);
   }
 
   handlingUser(){

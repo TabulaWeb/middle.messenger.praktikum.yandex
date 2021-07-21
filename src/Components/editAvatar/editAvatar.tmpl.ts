@@ -1,8 +1,8 @@
-const Handlebars = require("handlebars");
+const Handlebars = require('handlebars');
 
 export const source =`
-<div class="content-avatar__img" id="addavatarrr">
-  <img src="/noavatar.svg" alt="avatar">
+<div class='content-avatar__img' id='addavatarrr'>
+  <img src='/noavatar.svg' alt='avatar'>
 </div>
 `
 

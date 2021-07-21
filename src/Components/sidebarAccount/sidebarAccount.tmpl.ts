@@ -1,10 +1,10 @@
-const Handlebars = require("handlebars");
+const Handlebars = require('handlebars');
 
 export const source =`
-<div class="{{classBlock}}">
-  <div class="sidebar-account__item">
-    <a onclick="return window.history.back();">
-      <div class="link_back"></div>
+<div class='{{classBlock}}'>
+  <div class='sidebar-account__item'>
+    <a onclick='return window.history.back();'>
+      <div class='link_back'></div>
     </a>
   </div>
 </div>

@@ -1,11 +1,11 @@
-import Block from "../../Scripts/block";
+import Block from '../../Scripts/block';
 import { template } from './button.tmpl'
 
 export default class Button extends Block {
   constructor(props) {
     // Создаём враппер DOM-элемент button
 
-    super("button", props);
+    super('button', props);
   }
 
   render() {

@@ -1,5 +1,5 @@
 import Account from '../../Templates/account'
-import SidebarAccount from "../../Components/sidebarAccount";
+import SidebarAccount from '../../Components/sidebarAccount';
 
 const asideHTML = document.createElement('aside')
 const accountHeader = document.createElement('div')
