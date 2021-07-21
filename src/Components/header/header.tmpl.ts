@@ -12,6 +12,4 @@ export const source =`
 </div>
 `
 
-
-
 export const template = Handlebars.compile(source);
