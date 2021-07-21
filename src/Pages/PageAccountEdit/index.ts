@@ -1,5 +1,4 @@
 import Account from '../../Templates/account'
-import SidebarAccount from '../../Components/sidebarAccount';
 
 const asideHTML = document.createElement('aside')
 const accountHeader = document.createElement('div')
@@ -11,13 +10,9 @@ class PageAccountedit extends Account {
   static TextObject = {
     mainTitle: 'Page Accountedit'
   }
-  private sidebarAccount: SidebarAccount
 
   constructor(id: string){
     super(id)
-    this.sidebarAccount = new SidebarAccount({
-      classBlock: 'adawdaw'
-    })
   }
 
   render(){
