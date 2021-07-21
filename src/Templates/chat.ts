@@ -1,16 +1,10 @@
-
-
 abstract class Chat {
   protected container: HTMLElement;
   static TextObject = {}
 
-
-
-
   constructor(id: string){
     this.container = document.createElement('div')
     this.container.id = id
-
   }
 
   protected createHeaderTitle(text: string) {

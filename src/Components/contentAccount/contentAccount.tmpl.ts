@@ -54,16 +54,16 @@ export const source =`
     <div class='add-avatar__title'>
       <p>Загрузите фото</p>
     </div>
-    <form class='FileForm' name='uploadForm' id='form'>
+    <form class='file-form' name='uploadForm' id='form'>
       <div class='flyout-debug' id='flyout-d'></div>
-      <label class='fileUploader__button' for='upload'>
+      <label class='file-uploader__button' for='upload'>
         Выбрать файл на компьютере
       </label>
-      <input class='fileUploader__input' id='upload' type='file' accept='image/*'>
-      <p class='fileUploader__message' id='upload-message'></p>
+      <input class='file-uploader__input' id='upload' type='file' accept='image/*'>
+      <p class='file-uploader__message' id='upload-message'></p>
       <div class='changeFileButton'></div>
     </form>
-    <p class='FileForm__error'></p>
+    <p class='file-form__error'></p>
   </div>
 </div>
 `
